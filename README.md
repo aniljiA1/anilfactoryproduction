@@ -1,47 +1,52 @@
-# Factory Worker Metrics API
+# 🏭 Factory Production Monitoring System
 
-A FastAPI backend for tracking factory worker productivity, idle time, and units produced. Provides endpoints to fetch **worker-level metrics** and **factory-level summaries**.
+A full-stack factory production monitoring system built with **FastAPI (Python)** and **React (Vite)**.  
+This application tracks worker activity, production units, idle/working time, and provides real-time factory metrics.
 
-## Features
+---
 
-- Calculate per-worker metrics:
-  - Working time (seconds)
-  - Idle time (seconds)
-  - Units produced
-  - Utilization (% of productive time)
-- Aggregate factory metrics:
-  - Total productive hours
-  - Total units produced
-  - Average utilization
-- Handles timezone-aware and naive timestamps.
-- Easy integration with frontend applications (React, Vite, etc.)
-- CORS enabled for cross-origin requests.
+## 🚀 Features
+
+### Backend (FastAPI)
+- Worker metrics calculation (working time, idle time, units produced)
+- Factory-level summary metrics
+- REST APIs with SQLAlchemy ORM
+- Environment-based configuration
+- CORS-enabled for frontend integration
+
+### Frontend (React + Vite)
+- Dashboard view for factory summary
+- Worker metrics table
+- Environment-based API configuration
+- Clean UI with Tailwind CSS
+
+---
+
+## 🧱 Tech Stack
+
+**Backend**
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite / PostgreSQL
+- Uvicorn
+
+**Frontend**
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+
+---
+
+## 📂 Project Display
+
+
 
   
  Screenshot: https://drive.google.com/file/d/1RwvpHKrNLOIGJQYZDb_FVCRA827jCLaf/view?usp=sharing
 
 
-## Tech Stack
-
-- **Backend:** FastAPI, Python 3.11+
-- **Database:** SQLAlchemy ORM (compatible with PostgreSQL, MySQL, SQLite)
-- **Frontend:** React (example usage included)
-- **Other:** Pydantic models, CORS middleware
-
-
-## Installation
-
-1. Clone the repository:
-
-
-git clone https://github.com/your-username/factory-metrics-api.git
-cd factory-metrics-api
-Create a virtual environment and activate it:
-
-python -m venv venv
-source venv/bin/activate   # Linux/macOS
-venv\Scripts\activate      # Windows
-Install dependencies:
 
 
 pip install -r requirements.txt
@@ -98,4 +103,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+👨‍💻 Author
 
+Anil Kumar
