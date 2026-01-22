@@ -17,6 +17,10 @@ A FastAPI backend for tracking factory worker productivity, idle time, and units
 - Easy integration with frontend applications (React, Vite, etc.)
 - CORS enabled for cross-origin requests.
 
+  
+ Screenshot: https://drive.google.com/file/d/1RwvpHKrNLOIGJQYZDb_FVCRA827jCLaf/view?usp=sharing
+
+
 ## Tech Stack
 
 - **Backend:** FastAPI, Python 3.11+
