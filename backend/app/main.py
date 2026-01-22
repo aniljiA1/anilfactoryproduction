@@ -6,6 +6,7 @@ from app.seed import seed_data
 from app.routers import events, workers, workstations, factory
 
 
+
 app = FastAPI(title="AI Productivity Dashboard")
 
 
@@ -22,7 +23,6 @@ app.add_middleware(
     allow_methods=["*"],  # allow GET, POST, etc.
     allow_headers=["*"],  # allow all headers
 )
-
 
 Base.metadata.create_all(bind=engine)
 

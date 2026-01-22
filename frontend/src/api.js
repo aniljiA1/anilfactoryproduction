@@ -1,8 +1,10 @@
 // api.js
-export const API_BASE = "http://127.0.0.1:8000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const getWorkerMetrics = async () => {
-  const res = await fetch(`${API_BASE}/workers/metrics`);
-  if (!res.ok) throw new Error("API error");
+  const res = await fetch(`${API_BASE_URL}/workers/metrics`);
+  if (!res.ok) {
+    throw new Error("Failed to fetch worker metrics");
+  }
   return res.json();
 };

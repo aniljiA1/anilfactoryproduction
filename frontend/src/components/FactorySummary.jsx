@@ -1,13 +1,14 @@
 // FactorySummary.jsx
 import React, { useEffect, useState } from "react";
-import { API_BASE } from "../api";
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export default function FactorySummary() {
   const [summary, setSummary] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${API_BASE}/factory/metrics`)
+    fetch(`${API_BASE_URL}/factory/metrics`)
       .then((res) => {
         if (!res.ok) throw new Error(`Status ${res.status}`);
         return res.json();
