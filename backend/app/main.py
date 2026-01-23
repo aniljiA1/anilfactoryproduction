@@ -13,7 +13,8 @@ app = FastAPI(title="AI Productivity Dashboard")
 
 origins = [
     "http://localhost:5173",  # your React app
-    "http://127.0.0.1:5173",  # optional, in case Vite uses this
+    "http://127.0.0.1:5173", # optional, in case Vite uses this
+    "https://anilfactoryproduction.vercel.app",
 ]
 
 app.add_middleware(
