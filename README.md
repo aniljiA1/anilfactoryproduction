@@ -103,6 +103,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+Deploy:
+Backend (workers/metrics): https://anilfactoryproduction.onrender.com/workers/metrics
+Backend (factory/metrics): https://anilfactoryproduction.onrender.com/factory/metrics
+
+Frontend: https://anilfactoryproduction.vercel.app/
+
 👨‍💻 Author
 
 Anil Kumar
